@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mission: Con Đường Triết Gia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <h1>CON ĐƯỜNG TRIẾT GIA</h1>
+    <p>Hãy chọn con đường của bạn</p>
+
+    <div class="character-select">
+
+        <div class="char-card" onclick="startGame('plato')">
+            <img src="assets/characters/plato.png">
+            <h2>Plato</h2>
+            <p>Athens – 380 TCN</p>
+        </div>
+
+        <div class="char-card" onclick="startGame('confucius')">
+            <img src="assets/characters/confucius.png">
+            <h2>Khổng Tử</h2>
+            <p>Nước Lỗ – 500 TCN</p>
+        </div>
+
+        <div class="char-card" onclick="startGame('marx')">
+            <img src="assets/characters/marx.png">
+            <h2>Karl Marx</h2>
+            <p>London – 1848</p>
+        </div>
+
+    </div>
+
+    <script>
+        function startGame(path) {
+            localStorage.setItem("path", path);
+            window.location.href = "game.html";
+        }
+    </script>
+
+</body>
+
+</html>
